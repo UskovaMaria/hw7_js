@@ -8,24 +8,24 @@ console.log(filterBadWord(str, blackList));
 
 // (10) додаємо до функції
 
-console.log('str:', str); 
-const resStr = filterBadWord(str, blackList);
+// console.log('str:', str); 
+// const resStr = filterBadWord(str, blackList);
 
-console.log(resStr); 
+// console.log(resStr); 
 
-function filterBadWord(str, arr) { 
-    let resStr = str;
+// function filterBadWord(str, arr) { 
+//     let resStr = str;
     
-    for ( i = 0; i < arr.length; i++) {
-        let word = arr[i];
+//     for ( i = 0; i < arr.length; i++) {
+//         let word = arr[i];
 
-        while (resStr.indexOf(word) !== -1) {
-            resStr = resStr.replace(word, '*'.repeat(word.length));
-        } 
-    }
+//         while (resStr.indexOf(word) !== -1) {
+//             resStr = resStr.replace(word, '*'.repeat(word.length));
+//         } 
+//     }
 
-    return resStr;
-}
+//     return resStr;
+// }
 
     
     // (1) кількість входжень в рядку первірили 'aa'
@@ -219,6 +219,25 @@ function filterBadWord(str, arr) {
 //     } 
 //     return str;
 // }
+
+// (12) одразу всі входження і заміна на зірочки за допомогою replaceAll
+
+// console.log('str:', str); 
+// const resStr = filterBadWord(str, blackList);
+
+// console.log(resStr); 
+
+// function filterBadWord(str, arr) { 
+//     let resStr = str;
+    
+//     for ( i = 0; i < arr.length; i++) {
+//         let word = arr[i];
+//         resStr = resStr.replaceAll(word, '*'.repeat(word.length));
+//     }
+
+//     return resStr;
+// }
+
 
 
 // регулярні вирази
